@@ -10,6 +10,7 @@ txt = open(filename)
 # prints the filename and then prints the text
 print "Here's your file %r:" % filename
 print txt.read()
+txt.close()
 
 # gets a new or the same file from the user
 print "Type the filename again:"
@@ -20,3 +21,4 @@ txt_again = open(file_again)
 
 # prints out the file form the new variable 
 print txt_again.read()
+txt_again.close()
